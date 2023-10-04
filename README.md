@@ -9,7 +9,7 @@
 <pre><code>terraria</code></pre>
 <p>then it will ask you to type in whatever arguments you want to use while searching...<br>I will choose <code>-site:fandom.com</code> because I hate fandom.com</p>
 <pre><code>-site:fandom.com</code></pre>
-<p>Done! You can press the clear button to remove a keyword.</p>
+<p>Done! Now I don't have to worry about fandom.com while looking up some terraria facts!</p>
 
 <h2 align=center>I am a lil' technical... how?</h2>
 <p>Keywords are stored in the local storage. That way I don't have to ask you for <em>biscuits.</em></p>
