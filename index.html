@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div id="quack">
+<body style="display: flex;justify-content: center; overflow-x: hidden; overflow-y: auto;">
+<div style="display: flex;flex-direction: column;justify-content: center;">
+    <div id="quack" style="max-width: 1280px; width: 100vw;">
         <img width="480em" src="logo.svg" alt="">
         <form action="search.html" method="GET">
             <input class="search txt" name="q" type="text" required>
@@ -24,7 +25,8 @@
 	<h1 style="margin-top: 10vh;">The cool stuff</h1>
 	<details>
 	<summary>Set as default search engine</summary>
-	https://rngvalue.github.io/ducked-up-go/search?q=
+	<input style="width: 22%" type="text" value="https://rngvalue.github.io/ducked-up-go/search?q="></input>
+	<button onclick="navigator.clipboard.writeText('https://rngvalue.github.io/ducked-up-go/search?q=')">copy to clipboard</button>
 	</details>
 	<br>
 	<div style="display: flex; justify-content: center; margin-bottom: 5%;">
@@ -39,6 +41,7 @@
 			</tr>
 		</table>
 	</div>
+</div>
 </body>
 
 <script>
