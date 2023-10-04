@@ -5,9 +5,9 @@
 <p align=center>It's very simple actually! <a href="https://rngvalue.github.io/ducked-up-go">just visit the website!</a></p>
 
 <h2 align=center>Ok ok, now what?</h2>
-<p>Click the GIANT add button, it will ask you to type in a keyword... I will choose <code>terraria</code> as an example</p>
+<p>Click the GIANT add button, it will ask you to type in a keyword... I will type in <code>terraria</code> as an example</p>
 <pre><code>terraria</code></pre>
-<p>then it will ask you to type in whatever arguments you want to use while searching...<br>I will choose <code>-site:fandom.com</code> because I hate fandom.com</p>
+<p>then it will ask you to type in whatever arguments you want to use while searching...<br>I will use <code>-site:fandom.com</code> because I hate fandom.com</p>
 <pre><code>-site:fandom.com</code></pre>
 <p>Done! Now I don't have to worry about fandom.com while looking up some terraria facts!</p>
 
