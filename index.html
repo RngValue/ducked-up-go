@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="quack">
+        <img width="480em" src="logo.svg" alt="">
+        <form action="search.html" method="GET">
+            <input class="search txt" name="q" type="text" required>
+            <button class="search btn"  type="submit">🔍</button>
+        </form>
+        <p>DuckDuckGo for nerds. ❤️ Ligma!</p>
+        <a href="https://www.youtube.com/@SomeOrdinaryGamers"><img style="margin-top: 10px; border-radius: 50%;" width="80em" src="muta.jpg" alt=""></a>
+        <p style="margin: 0px; font-family: 'Bungee Spice', cursive;">Follow Muta for free Futa!</p>
+    </div>
+	
+	<h1 style="margin-top: 10vh;">The cool stuff</h1>
+	<details>
+	<summary>Set as default search engine</summary>
+	sdafsafg
+	</details>
+	<br>
+	<div style="display: flex; justify-content: center; margin-bottom: 5%;">
+		
+		<button onclick="uwu(window.prompt('Key word', ''), window.prompt('Arguments', ''))">add</button>
+	
+		<table id="grapes" style="width:50%">
+			<tr>
+				<th>Keywords</th>
+				<th>Arguments</th>
+				<th></th>
+			</tr>
+		</table>
+	</div>
+</body>
+
+<script>
+
+	const leDuck = document.getElementById("grapes")
+	
+	function uwu(shit, shitDone) {
+		localStorage.setItem(shit, shitDone)
+		leDuck.innerHTML += "<tr id=\"" + shit + "\" >\n" + "<td>" + shit + "</td>\n" + "<td>" + shitDone + "</td>\n" + "<td>" + "<button onclick=\"localStorage.removeItem('" + shit + "'); document.getElementById('" + shit + "').remove()" + "\" >clear</button>" + "</td>" + "<tr>"
+	}
+	
+	for (var i = 0; i < localStorage.length; i++) {
+		leDuck.innerHTML += "<tr id=\"" + localStorage.key(i) + "\" >\n" + "<td>" + localStorage.key(i) + "</td>\n" + "<td>" + localStorage.getItem(localStorage.key(i)) + "</td>\n" + "<td>" + "<button onclick=\"localStorage.removeItem('" + localStorage.key(i) + "'); document.getElementById('" + localStorage.key(i) + "').remove()" + "\" >clear</button>" + "</td>" + "<tr>"
+	}
+
+</script>
+
+</html>

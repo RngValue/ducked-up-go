@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    margin-top: 7vh;
+}
+
+#quack {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search {
+    height: 46px;
+    width: 100%;
+    background-color: #333333;
+    border-width: 0;
+}
+
+.txt {
+    border-radius: .6em 0px 0px .6em;
+}
+
+.btn {
+    border-radius: 0px .6em .6em 0px;
+    height: auto;
+    width: 10%;
+}
+
+form {
+    margin-top: -35px;
+    border-radius: .45em;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    flex-direction: row;
+    width: 44%;
+    min-width: 300px;
+}
