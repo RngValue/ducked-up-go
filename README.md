@@ -1,9 +1,6 @@
 <h1 align=center><img width="50%" src="/logo.svg"></img><br><a href="https://rngvalue.github.io/ducked-up-go">VISIT THE WEBSITE</a></h1>
 <p align=center>DuckDuckGo with magic<br>Automate search arguments with keywords!</p>
 
-<h2 align=center>How do I achieve this power?</h2>
-<p align=center>It's very simple actually! <a href="https://rngvalue.github.io/ducked-up-go">just visit the website!</a></p>
-
 <h2 align=center>Ok ok, now what?</h2>
 <p>Click the GIANT add button, it will ask you to type in a keyword... I will type in <code>terraria</code> as an example</p>
 <pre><code>terraria</code></pre>
