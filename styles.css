@@ -20,6 +20,7 @@ body {
     height: 46px;
     width: 100%;
     background-color: #333333;
+    color: white;
     border-width: 0;
 }
 
@@ -41,4 +42,6 @@ form {
     flex-direction: row;
     width: 44%;
     min-width: 300px;
+    padding-left: 1rem;
+    background-color: #333;
 }
