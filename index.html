@@ -3,24 +3,24 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="public/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-	<link rel="icon" href="favicon.ico" type="image/icon type">
+	<link rel="icon" href="public/favicon.ico" type="image/icon type">
 	<title>DuckedUpGo_ - DDG but cooler</title>
 </head>
 
 <body style="display: flex;justify-content: center; overflow-x: hidden; overflow-y: auto;">
 <div style="display: flex;flex-direction: column;justify-content: center;">
     <div id="quack" style="max-width: 1280px; width: 100vw;">
-        <img width="480em" src="logo.svg" alt="">
+        <img width="480em" src="public/logo.svg" alt="ducked-up-go logo">
         <form action="search.html" method="GET">
             <input class="search txt" name="q" type="text" required>
             <button class="search btn"  type="submit">🔍</button>
         </form>
         <p>DuckDuckGo for nerds. ❤️ Ligma!</p>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULbmV2ZXIgZ29ubmE%3D"><img style="margin-top: 10px; border-radius: 50%;" width="80em" src="https://stickerly.pstatic.net/sticker_pack/Vb3MXfeQgCmfeyibwGfsA/RS94ZT/20/a8297a0b-cb58-49f8-a9ca-42118b572242.png" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULbmV2ZXIgZ29ubmE%3D"><img style="margin-top: 10px; border-radius: 50%;" width="80em" src="https://stickerly.pstatic.net/sticker_pack/Vb3MXfeQgCmfeyibwGfsA/RS94ZT/20/a8297a0b-cb58-49f8-a9ca-42118b572242.png" alt="uwu"></a>
         <p style="margin: 0px; font-family: 'Bungee Spice', cursive;">Free feet pics</p>
     </div>
 	
@@ -38,7 +38,7 @@
 		
 		<button onclick="uwu(window.prompt('Key word', ''), window.prompt('Arguments', ''))">add</button>
 	
-		<table id="grapes" style="width:50%">
+		<table id="keywordtable" style="width:50%">
 			<tr>
 				<th>Keywords</th>
 				<th>Arguments</th>
@@ -50,18 +50,14 @@
 </body>
 
 <script>
-
-	const leDuck = document.getElementById("grapes")
-	
 	function uwu(shit, shitDone) {
 		localStorage.setItem(shit, shitDone)
-		leDuck.innerHTML += "<tr id=\"" + shit + "\" >\n" + "<td>" + shit + "</td>\n" + "<td>" + shitDone + "</td>\n" + "<td>" + "<button onclick=\"localStorage.removeItem('" + shit + "'); document.getElementById('" + shit + "').remove()" + "\" >clear</button>" + "</td>" + "<tr>"
+		keywordtable.innerHTML += "<tr id=\"" + shit + "\" >\n" + "<td>" + shit + "</td>\n" + "<td>" + shitDone + "</td>\n" + "<td>" + "<button onclick=\"localStorage.removeItem('" + shit + "'); document.getElementById('" + shit + "').remove()" + "\" >clear</button>" + "</td>" + "<tr>"
 	}
 	
 	for (var i = 0; i < localStorage.length; i++) {
-		leDuck.innerHTML += "<tr id=\"" + localStorage.key(i) + "\" >\n" + "<td>" + localStorage.key(i) + "</td>\n" + "<td>" + localStorage.getItem(localStorage.key(i)) + "</td>\n" + "<td>" + "<button onclick=\"localStorage.removeItem('" + localStorage.key(i) + "'); document.getElementById('" + localStorage.key(i) + "').remove()" + "\" >clear</button>" + "</td>" + "<tr>"
+		keywordtable.innerHTML += "<tr id=\"" + localStorage.key(i) + "\" >\n" + "<td>" + localStorage.key(i) + "</td>\n" + "<td>" + localStorage.getItem(localStorage.key(i)) + "</td>\n" + "<td>" + "<button onclick=\"localStorage.removeItem('" + localStorage.key(i) + "'); document.getElementById('" + localStorage.key(i) + "').remove()" + "\" >clear</button>" + "</td>" + "<tr>"
 	}
-
 </script>
 
 </html>

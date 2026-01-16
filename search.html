@@ -5,24 +5,32 @@
 <noscript>Dude, you don't use javascript? That not cool bro >:(</noscript>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="public/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-	<link rel="icon" href="favicon.ico" type="image/icon type">
+	<link rel="icon" href="public/favicon.ico" type="image/icon type">
 	<title>DuckedUpGo_ - DDG but cooler</title>
 </head>
 
 <script>
-    const leDuck = document.getElementById("duck")
 	let duckSeason = ""
+    const urlchars = {
+        "+": "%2B",
+        "&": "%26",
+        "=": "%3D",
+        "?": "%3F",
+        "#": "%23"
+    }
     new URLSearchParams(window.location.search).forEach((value, name) => {
 		for (var i = 0; i < localStorage.length; i++) {
 			if (value.includes(localStorage.key(i))) {
 				duckSeason += localStorage.getItem(localStorage.key(i))
 			}
 		}
-        value = value.replaceAll("+", "%2B").replaceAll("&", "%26").replaceAll("=", "%3D").replaceAll("?", "%3F").replaceAll("#", "%23");
+        Object.keys(urlchars).forEach((key) => {
+            value = value.replaceAll(key, urlchars[key]);
+        })
         var myWindow = location.replace(`https://duckduckgo.com/?q=${value} ` + duckSeason);
     })
 </script>
