@@ -1,4 +1,4 @@
-<h1 align=center><img width="50%" src="/logo.svg"></img><br><a href="https://rngvalue.github.io/ducked-up-go">VISIT THE WEBSITE</a></h1>
+<h1 align=center><img width="50%" src="public/logo.svg"></img><br><a href="https://rngvalue.github.io/ducked-up-go">VISIT THE WEBSITE</a></h1>
 <p align=center>DuckDuckGo with magic<br>Automate search arguments with keywords!</p>
 
 <h2 align=center>Ok ok, now what?</h2>
